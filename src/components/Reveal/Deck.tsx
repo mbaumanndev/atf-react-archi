@@ -7,6 +7,8 @@ import RevealMarkdown from "reveal.js/plugin/markdown/markdown";
 import RevealHighlight from "reveal.js/plugin/highlight/highlight";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/night.css";
+import "reveal.js/plugin/highlight/monokai.css"
+//import "plugin/highlight/monokai.css"
 import Logo from "../Logo";
 
 type DeckProps = PropsWithChildren<{

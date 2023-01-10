@@ -1,12 +1,13 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import mdx from "@mdx-js/rollup";
 
 const outDir = resolve(__dirname, "..", "dist");
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), mdx({ remarkPlugins: [] })],
   build: {
     rollupOptions: {
       input: {
@@ -15,5 +16,8 @@ export default defineConfig({
     },
     outDir,
     emptyOutDir: true,
+  },
+  optimizeDeps: {
+    include: ["react/jsx-runtime"],
   },
 });
