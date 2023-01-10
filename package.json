@@ -9,6 +9,8 @@
     "preview": "vite preview src"
   },
   "dependencies": {
+    "mdx-mermaid": "^2.0.0-rc3",
+    "mermaid": "^9.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "reveal.js": "^4.4.0"
@@ -21,6 +23,9 @@
     "@types/react-dom": "^18.0.9",
     "@types/reveal.js": "^4.4.0",
     "@vitejs/plugin-react": "^3.0.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   }

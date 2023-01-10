@@ -1,5 +1,5 @@
 import React from "react";
-import Slide from "../components/Reveal/Slide";
+import { Slide } from "../components/Reveal";
 
 export default function TitleSlide() {
     return <Slide>

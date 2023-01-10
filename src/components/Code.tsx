@@ -13,7 +13,7 @@ export function withCodeRenderer({
   };
 }
 
-type CodeProps = {
+export type CodeProps = {
   readonly lineNumbers?: string | boolean;
   readonly lineNumberOffset?: string | number;
 };

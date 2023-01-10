@@ -1,5 +1,5 @@
 import React from "react";
-import Slide, { SlideProps } from "./Reveal/Slide";
+import { Slide, type SlideProps } from "./Reveal";
 
 type SlideWithTitleProps = SlideProps & {
   readonly title: React.ReactNode;
