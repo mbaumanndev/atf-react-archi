@@ -9,8 +9,18 @@ const outDir = resolve(__dirname, "..", "dist");
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    {
+      enforce: "pre",
+      ...mdx({
+        remarkPlugins: [
+          [
+            mdxMermaid,
+            { theme: { light: "neutral", dark: "forest" } },
+          ],
+        ],
+      }),
+    },
     react(),
-    mdx({ remarkPlugins: [[mdxMermaid, { theme: { light: 'neutral', dark: 'forest' } }]] }),
   ],
   build: {
     rollupOptions: {
