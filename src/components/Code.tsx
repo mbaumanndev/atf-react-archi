@@ -1,12 +1,17 @@
 import React, { PropsWithChildren } from "react";
 
 export function withCodeRenderer({
+  className,
   lineNumberOffset,
   lineNumbers,
 }: CodeProps = {}) {
   return ({ children }: PropsWithChildren) => {
     return (
-      <Code lineNumberOffset={lineNumberOffset} lineNumbers={lineNumbers}>
+      <Code
+        className={className}
+        lineNumberOffset={lineNumberOffset}
+        lineNumbers={lineNumbers}
+      >
         {children}
       </Code>
     );
@@ -14,6 +19,7 @@ export function withCodeRenderer({
 }
 
 export type CodeProps = {
+  readonly className?: string;
   readonly lineNumbers?: string | boolean;
   readonly lineNumberOffset?: string | number;
 };

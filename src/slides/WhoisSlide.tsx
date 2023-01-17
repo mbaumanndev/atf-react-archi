@@ -4,7 +4,7 @@ import SlideWithTitle from "../components/SlideWithTitle";
 import imgUrl from "../assets/profile.jpeg";
 import logoPsycle from "../assets/logo-psycle.svg";
 import Stack from "../components/Stack";
-import Fragment from "../components/Fragment";
+import Fragment, { FragmentEffect } from "../components/Fragment";
 
 export default function WhoisSlide() {
   return (
@@ -41,14 +41,14 @@ export default function WhoisSlide() {
       </SlideWithTitle>
       <SlideWithTitle title="Mon parcours">
         <Stack>
-          <Fragment title="Etudes">
+          <Fragment effect={FragmentEffect.FadeInThenOut} title="Etudes">
             <ul>
               <li>DUT Informatique - UPJV - 2016</li>
               <li>LP RGI - UPJV - 2017</li>
               <li>Master CCM - UPJV - 2019</li>
             </ul>
           </Fragment>
-          <Fragment title="Spécialités">
+          <Fragment effect={FragmentEffect.FadeInThenOut} title="Spécialités">
             <ul>
               <li>Dev web Fullstack</li>
               <li>Cloud Computing</li>
@@ -56,7 +56,7 @@ export default function WhoisSlide() {
               <li>Web Design</li>
             </ul>
           </Fragment>
-          <Fragment title="Certifications">
+          <Fragment effect={FragmentEffect.FadeInThenOut} title="Certifications">
             <ul>
               <li>MCSA: Web Applications</li>
               <li>MCSD: App Builder</li>
@@ -64,7 +64,7 @@ export default function WhoisSlide() {
               <li>Azure Solutions Architect Expert</li>
             </ul>
           </Fragment>
-          <Fragment title="Jobs">
+          <Fragment effect={FragmentEffect.FadeIn} title="Jobs">
             <ul>
               <li>Consultant @ B&D Amiens (2016-2021)</li>
               <li>Enseignant Vacataire @ UPJV (2018+)</li>

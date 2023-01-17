@@ -5,6 +5,7 @@ export const FragmentDefaultAsType = "div" as const;
 export type FragmentDefaultAsType = typeof FragmentDefaultAsType;
 
 export enum FragmentEffect {
+  FadeIn = "",
   FadeOut = "fade-out",
   FadeUp = "fade-up",
   FadeDown = "fade-down",
@@ -33,7 +34,7 @@ export type FragmentProps<TElement extends React.ElementType> =
 export default function Fragment<TElement extends React.ElementType>({
   as,
   children,
-  effect = FragmentEffect.FadeInThenOut,
+  effect = FragmentEffect.FadeUp,
   title,
 }: FragmentProps<TElement>) {
   const Tag = as || FragmentDefaultAsType;
