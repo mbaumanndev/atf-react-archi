@@ -8,7 +8,14 @@ export default function Context() {
   return (
     <Slide>
       <SlideWithTitle title="Mise en contexte" />
-      <SlideWithTitle title="L'équipe">
+      <SlideWithTitle title="React">
+        <ul>
+          <Fragment as="li">Une librairie pour faire des interfaces</Fragment>
+          <Fragment as="li">N'est pas un framework</Fragment>
+          <Fragment as="li">Fonctionne de façon déclarative</Fragment>
+        </ul>
+      </SlideWithTitle>
+      <SlideWithTitle title="Psycle">
         <Stack>
           <Fragment effect={FragmentEffect.FadeInThenOut} title="5 développeurs">
             <ul>
@@ -58,6 +65,14 @@ export default function Context() {
       </SlideWithTitle>
       <SlideWithTitle title="Un besoin">
         <Fragment title="Mutualiser le plus de code possible" />
+      </SlideWithTitle>
+      <SlideWithTitle title="Quelques problèmes">
+        <ul>
+          <Fragment as="li" title="React n'est pas un framework" />
+          <Fragment as="li" title="NextJS ne match pas nos besoins" />
+          <Fragment as="li" title="Remix ne match pas nos besoins" />
+          <Fragment as="li" title="Aucun framework React ne match nos besoins" />
+        </ul>
       </SlideWithTitle>
     </Slide>
   );

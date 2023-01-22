@@ -1,9 +1,18 @@
 import React from "react";
 import SlideWithTitle from "../components/SlideWithTitle";
-
-import SampleCode from "../samples/test.md";
 import { withCodeRenderer } from "../components/Code";
 import { Slide } from "../components/Reveal";
+
+import TodoAppInitialCode from "../samples/todo_app_initial.md"
+import TodoAppSrpCode from "../samples/todo_app_srp.md"
+import TodoAppOcpCode from "../samples/todo_app_ocp.md"
+import TodoAppOcp2Code from "../samples/todo_app_ocp_2.md"
+import TodoAppLspCode from "../samples/todo_app_lsp.md"
+import TodoAppIspCode from "../samples/todo_app_isp.md"
+import TodoAppIsp2Code from "../samples/todo_app_isp_2.md"
+import TodoAppIsp3Code from "../samples/todo_app_isp_3.md"
+import TodoAppDipCode from "../samples/todo_app_dip.md"
+import TodoAppDip2Code from "../samples/todo_app_dip_2.md"
 
 export default function ReactSolid() {
   return (
@@ -16,10 +25,19 @@ export default function ReactSolid() {
         </em>
       </SlideWithTitle>
       <SlideWithTitle title="Single Responsability Principle">
-        <SampleCode
+        <TodoAppInitialCode
           components={{
             code: withCodeRenderer({
-              lineNumbers: "3-5|8-10|13-15",
+              lineNumbers: "1-36|7-14|16-24|26-33",
+            }),
+          }}
+        />
+      </SlideWithTitle>
+      <SlideWithTitle title="Single Responsability Principle">
+        <TodoAppSrpCode
+          components={{
+            code: withCodeRenderer({
+              lineNumbers: "1-48|4-10|12-24|26-34|36-45",
             }),
           }}
         />
@@ -32,10 +50,28 @@ export default function ReactSolid() {
         </em>
       </SlideWithTitle>
       <SlideWithTitle title="Open/Closed Principle">
-        <SampleCode
+        <TodoAppSrpCode
           components={{
             code: withCodeRenderer({
-              lineNumbers: "3-5|8-10|13-15",
+              lineNumbers: "26-34",
+            }),
+          }}
+        />
+      </SlideWithTitle>
+      <SlideWithTitle title="Open/Closed Principle">
+        <TodoAppOcpCode
+          components={{
+            code: withCodeRenderer({
+              lineNumbers: "3|4|6-12|21",
+            }),
+          }}
+        />
+      </SlideWithTitle>
+      <SlideWithTitle title="Open/Closed Principle">
+        <TodoAppOcp2Code
+          components={{
+            code: withCodeRenderer({
+              lineNumbers: "3-7|15",
             }),
           }}
         />
@@ -49,10 +85,10 @@ export default function ReactSolid() {
         </em>
       </SlideWithTitle>
       <SlideWithTitle title="Liskov substitution principle">
-        <SampleCode
+        <TodoAppLspCode
           components={{
             code: withCodeRenderer({
-              lineNumbers: "3-5|8-10|13-15",
+              lineNumbers: "1-4|2"
             }),
           }}
         />
@@ -65,10 +101,28 @@ export default function ReactSolid() {
         </em>
       </SlideWithTitle>
       <SlideWithTitle title="Interface segregation principle">
-        <SampleCode
+        <TodoAppIspCode
           components={{
             code: withCodeRenderer({
-              lineNumbers: "3-5|8-10|13-15",
+              lineNumbers: true,
+            }),
+          }}
+        />
+      </SlideWithTitle>
+      <SlideWithTitle title="Interface segregation principle">
+        <TodoAppIsp2Code
+          components={{
+            code: withCodeRenderer({
+              lineNumbers: true,
+            }),
+          }}
+        />
+      </SlideWithTitle>
+      <SlideWithTitle title="Interface segregation principle">
+        <TodoAppIsp3Code
+          components={{
+            code: withCodeRenderer({
+              lineNumbers: "3-9|11-21",
             }),
           }}
         />
@@ -78,10 +132,19 @@ export default function ReactSolid() {
         <em>Il faut dépendre des abstractions, pas des implémentations.</em>
       </SlideWithTitle>
       <SlideWithTitle title="Dependency inversion principle">
-        <SampleCode
+        <TodoAppDipCode
           components={{
             code: withCodeRenderer({
-              lineNumbers: "3-5|8-10|13-15",
+              lineNumbers: "1-29|2|4-12",
+            }),
+          }}
+        />
+      </SlideWithTitle>
+      <SlideWithTitle title="Dependency inversion principle">
+        <TodoAppDip2Code
+          components={{
+            code: withCodeRenderer({
+              lineNumbers: "1-47|1|2|4-8|25-35|37-47",
             }),
           }}
         />
