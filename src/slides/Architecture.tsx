@@ -62,57 +62,59 @@ export default function Architecture() {
         </ul>
       </SlideWithTitle>
       <SlideWithTitle title="Code Domaine">
-        <Stack>
-          <Fragment effect={FragmentEffect.FadeInThenOut} title="Modèle">
-            <HexaDomainModelCode
-              components={{
-                code: withCodeRenderer({
-                  lineNumbers: "1-10|1-3|5-10",
-                }),
-              }}
-            />
-          </Fragment>
-          <Fragment effect={FragmentEffect.FadeInThenOut} title="Repository">
-            <HexaDomainRepoCode
-              components={{
-                code: withCodeRenderer({
-                  lineNumbers: "1-3",
-                }),
-              }}
-            />
-          </Fragment>
-          <Fragment effect={FragmentEffect.FadeIn} title="Service">
-            <HexaDomainServiceCode
-              components={{
-                code: withCodeRenderer({
-                  lineNumbers: "1-36|3-8|10-24|27-36|2|26,30|30-31|34",
-                }),
-              }}
-            />
-          </Fragment>
-        </Stack>
+        <Fragment title="Modèle">
+          <HexaDomainModelCode
+            components={{
+              code: withCodeRenderer({
+                lineNumbers: "1-10|1-3|5-10",
+              }),
+            }}
+          />
+        </Fragment>
+      </SlideWithTitle>
+      <SlideWithTitle title="Code Domaine">
+        <Fragment title="Repository">
+          <HexaDomainRepoCode
+            components={{
+              code: withCodeRenderer({
+                lineNumbers: "1-3",
+              }),
+            }}
+          />
+        </Fragment>
+      </SlideWithTitle>
+      <SlideWithTitle title="Code Domaine">
+        <Fragment title="Service">
+          <HexaDomainServiceCode
+            components={{
+              code: withCodeRenderer({
+                lineNumbers: "1-36|3-8|10-24|27-36|1|26,30|30-31|34",
+              }),
+            }}
+          />
+        </Fragment>
       </SlideWithTitle>
       <SlideWithTitle title="Code Infrastructure">
-        <Stack>
-          <Fragment effect={FragmentEffect.FadeInThenOut} title="Repository">
-            <HexaInfraRepoCode
-              components={{
-                code: withCodeRenderer({
-                  lineNumbers: "1-16|1,3,8|5,14",
-                }),
-              }}
-            />
-          </Fragment>
-          <Fragment effect={FragmentEffect.FadeIn} title="Service">
-            <HexaInfraServiceCode
-              components={{
-                code: withCodeRenderer({
-                  lineNumbers: "1-35|1|3,8,9|7-24|9,15-23|26-32",
-                }),
-              }}
-            />
-          </Fragment>
-        </Stack>
+        <Fragment title="Repository">
+          <HexaInfraRepoCode
+            components={{
+              code: withCodeRenderer({
+                lineNumbers: "1-16|1,3,8|5,14",
+              }),
+            }}
+          />
+        </Fragment>
+      </SlideWithTitle>
+      <SlideWithTitle title="Code Infrastructure">
+        <Fragment title="Service">
+          <HexaInfraServiceCode
+            components={{
+              code: withCodeRenderer({
+                lineNumbers: "1-35|1|3,8,9|7-24|9,15-23|26-32",
+              }),
+            }}
+          />
+        </Fragment>
       </SlideWithTitle>
       <SlideWithTitle title="Code applicatif">
         <Fragment title="IoC">
@@ -126,35 +128,37 @@ export default function Architecture() {
         </Fragment>
       </SlideWithTitle>
       <SlideWithTitle title="Code Infrastructure">
-        <Stack>
-          <Fragment effect={FragmentEffect.FadeInThenOut} title="IoC côté vue">
-            <HexaInfraIocCode
-              components={{
-                code: withCodeRenderer({
-                  lineNumbers: "1-29|1|6-12|16|18-20|22-27",
-                }),
-              }}
-            />
-          </Fragment>
-          <Fragment effect={FragmentEffect.FadeInThenOut} title="Presenter">
-            <HexaInfraPresenterCode
-              components={{
-                code: withCodeRenderer({
-                  lineNumbers: "1-36|1-6|8-15|15-20|21-34",
-                }),
-              }}
-            />
-          </Fragment>
-          <Fragment effect={FragmentEffect.FadeIn} title="Vue">
-            <HexaInfraViewCompCode
-              components={{
-                code: withCodeRenderer({
-                  lineNumbers: "1-18|1-3|18",
-                }),
-              }}
-            />
-          </Fragment>
-        </Stack>
+        <Fragment title="IoC côté vue">
+          <HexaInfraIocCode
+            components={{
+              code: withCodeRenderer({
+                lineNumbers: "1-29|1|6-12|16|18-20|22-27",
+              }),
+            }}
+          />
+        </Fragment>
+      </SlideWithTitle>
+      <SlideWithTitle title="Code Infrastructure">
+        <Fragment title="Presenter">
+          <HexaInfraPresenterCode
+            components={{
+              code: withCodeRenderer({
+                lineNumbers: "1-36|1-6|8-15|15-20|21-34",
+              }),
+            }}
+          />
+        </Fragment>
+      </SlideWithTitle>
+      <SlideWithTitle title="Code Infrastructure">
+        <Fragment title="Vue">
+          <HexaInfraViewCompCode
+            components={{
+              code: withCodeRenderer({
+                lineNumbers: "1-18|1-3|18",
+              }),
+            }}
+          />
+        </Fragment>
       </SlideWithTitle>
       <SlideWithTitle title="Code Applicatif">
         <Fragment title="Bootstrap de l'application">

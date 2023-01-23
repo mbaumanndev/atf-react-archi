@@ -8,19 +8,12 @@ export default function Context() {
   return (
     <Slide>
       <SlideWithTitle title="Mise en contexte" />
-      <SlideWithTitle title="React">
-        <ul>
-          <Fragment as="li">Une librairie pour faire des interfaces</Fragment>
-          <Fragment as="li">N'est pas un framework</Fragment>
-          <Fragment as="li">Fonctionne de façon déclarative</Fragment>
-        </ul>
-      </SlideWithTitle>
       <SlideWithTitle title="Psycle">
         <Stack>
           <Fragment effect={FragmentEffect.FadeInThenOut} title="5 développeurs">
             <ul>
               <li>
-                2 avec d'autres tâches (clientèle, commercial, ...)
+                2 associés
               </li>
               <li>2 à temps plein</li>
               <li>1 alternant</li>
@@ -28,7 +21,7 @@ export default function Context() {
           </Fragment>
           <Fragment effect={FragmentEffect.FadeIn} title="2 devs frontend">
             <ul>
-              <li>1 avec d'autres tâches</li>
+              <li>1 associé</li>
               <li>1 temps plein</li>
             </ul>
           </Fragment>
@@ -62,6 +55,13 @@ export default function Context() {
             </ul>
           </Fragment>
         </Stack>
+      </SlideWithTitle>
+      <SlideWithTitle title="React">
+        <ul>
+          <Fragment as="li">Une librairie pour faire des interfaces</Fragment>
+          <Fragment as="li">N'est pas un framework</Fragment>
+          <Fragment as="li">Fonctionne de façon déclarative</Fragment>
+        </ul>
       </SlideWithTitle>
       <SlideWithTitle title="Un besoin">
         <Fragment title="Mutualiser le plus de code possible" />
