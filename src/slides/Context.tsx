@@ -68,10 +68,10 @@ export default function Context() {
       </SlideWithTitle>
       <SlideWithTitle title="Quelques problèmes">
         <ul>
-          <Fragment as="li" title="React n'est pas un framework" />
-          <Fragment as="li" title="NextJS ne match pas nos besoins" />
-          <Fragment as="li" title="Remix ne match pas nos besoins" />
-          <Fragment as="li" title="Aucun framework React ne match nos besoins" />
+          <Fragment as="li">React n'est pas un framework</Fragment>
+          <Fragment as="li">NextJS ne match pas nos besoins</Fragment>
+          <Fragment as="li">Remix ne match pas nos besoins</Fragment>
+          <Fragment as="li">Aucun framework React ne match nos besoins</Fragment>
         </ul>
       </SlideWithTitle>
     </Slide>
