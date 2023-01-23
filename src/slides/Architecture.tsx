@@ -67,7 +67,7 @@ export default function Architecture() {
             <HexaDomainModelCode
               components={{
                 code: withCodeRenderer({
-                  lineNumbers: true,
+                  lineNumbers: "1-10|1-3|5-10",
                 }),
               }}
             />
@@ -76,7 +76,7 @@ export default function Architecture() {
             <HexaDomainRepoCode
               components={{
                 code: withCodeRenderer({
-                  lineNumbers: true,
+                  lineNumbers: "1-3",
                 }),
               }}
             />
@@ -85,7 +85,7 @@ export default function Architecture() {
             <HexaDomainServiceCode
               components={{
                 code: withCodeRenderer({
-                  lineNumbers: true,
+                  lineNumbers: "1-36|3-8|10-24|27-36|2|26,30|30-31|34",
                 }),
               }}
             />
@@ -98,7 +98,7 @@ export default function Architecture() {
             <HexaInfraRepoCode
               components={{
                 code: withCodeRenderer({
-                  lineNumbers: true,
+                  lineNumbers: "1-16|1,3,8|5,14",
                 }),
               }}
             />
@@ -107,7 +107,7 @@ export default function Architecture() {
             <HexaInfraServiceCode
               components={{
                 code: withCodeRenderer({
-                  lineNumbers: true,
+                  lineNumbers: "1-35|1|3,8,9|7-24|9,15-23|26-32",
                 }),
               }}
             />
@@ -119,7 +119,7 @@ export default function Architecture() {
           <HexaAppIocCode
             components={{
               code: withCodeRenderer({
-                lineNumbers: true,
+                lineNumbers: "1-7|3",
               }),
             }}
           />
@@ -131,7 +131,7 @@ export default function Architecture() {
             <HexaInfraIocCode
               components={{
                 code: withCodeRenderer({
-                  lineNumbers: true,
+                  lineNumbers: "1-29|1|6-12|16|18-20|22-27",
                 }),
               }}
             />
@@ -140,7 +140,7 @@ export default function Architecture() {
             <HexaInfraPresenterCode
               components={{
                 code: withCodeRenderer({
-                  lineNumbers: "1-36|1-6|8-14|21-34",
+                  lineNumbers: "1-36|1-6|8-15|15-20|21-34",
                 }),
               }}
             />
@@ -161,7 +161,8 @@ export default function Architecture() {
           <HexaAppBootstrapCode
             components={{
               code: withCodeRenderer({
-                lineNumbers: "1-63|2|3|4|5|7|9|11-19|21-40|24,28|33-40|42-50|51|53-61",
+                lineNumbers:
+                  "1-63|2|3|4|5|7|9|11-19|21-40|24,28|33-40|42-50|51|53-61",
               }),
             }}
           />
