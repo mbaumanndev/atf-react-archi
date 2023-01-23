@@ -12,7 +12,7 @@ export class TodosRepository implements ITodosRepository {
     }
 
     async getTodosAsync() {
-        return this.http.get<Data[]>('/todos')
+        return this.http.get<Todo[]>('/todos')
     }
 }
 ```

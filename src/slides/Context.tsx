@@ -71,7 +71,7 @@ export default function Context() {
           <Fragment as="li">React n'est pas un framework</Fragment>
           <Fragment as="li">NextJS ne match pas nos besoins</Fragment>
           <Fragment as="li">Remix ne match pas nos besoins</Fragment>
-          <Fragment as="li">Aucun framework React ne match nos besoins</Fragment>
+          <Fragment as="li">Aucun "framework" React ne match nos besoins</Fragment>
         </ul>
       </SlideWithTitle>
     </Slide>

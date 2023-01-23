@@ -40,6 +40,15 @@ container
     .to(TodosService)
     .inRequestScope()
 
+container
+    .bind<string>('baseURL')
+    .toDynamicValue((context) => {
+        const storage = context.container.get<IStorageService>(
+            IoC.IStorageService,
+        )
+        return storage.get('baseUrl') || 'https://jsonplaceholder.typicode.com'
+    })
+    .inRequestScope()
 container.bind<QueryClient>('queryClient').toConstantValue(queryClient)
 
 function App() {
